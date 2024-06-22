@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereço de Entrega</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Endereço de entrega</h2>
+        <form id="address-form">
+            <div class="form-group">
+                <label for="name">Nome do contato</label>
+                <input type="text" id="name" name="name" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de celular</label>
+                <div class="phone-input">
+                    <span>+55</span>
+                    <input type="text" id="phone" name="phone" placeholder="Número de celular">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Endereço</label>
+                <select id="country" name="country">
+                    <option value="brazil">Brazil</option>
+                </select>
+                <input type="text" id="cep" name="cep" placeholder="CEP">
+                <a href="https://buscacepinter.correios.com.br" target="_blank">Você pode clicar neste link para realizar uma pesquisa de código postal.</a>
+            </div>
+            <div class="form-group">
+                <input type="text" id="state" name="state" placeholder="Estado">
+                <input type="text" id="city" name="city" placeholder="Cidade">
+                <input type="text" id="neighborhood" name="neighborhood" placeholder="Bairro">
+            </div>
+            <div class="form-group">
+                <input type="text" id="address" name="address" placeholder="Endereço">
+                <input type="text" id="number" name="number" placeholder="Número">
+                <span>Digite SN se não houver número</span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="complement" name="complement" placeholder="Apto, conjunto, unidade, etc.">
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Por favor, informe um CPF válido para liberação alfandegária">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="default-address" name="default-address">
+                <label for="default-address">Definir como endereço padrão de envio</label>
+            </div>
+            <div class="form-actions">
+                <a href="https://mpago.la/2Cc7ELf"><button type="button" onclick="confirmAddress()">Confirm</button></a>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function confirmAddress() {
+            alert("Endereço salvo");
+        }
+    </script>
+</body>
+</html>

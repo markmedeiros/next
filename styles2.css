@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input span {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-right: none;
+    background-color: #f1f1f1;
+    border-radius: 4px 0 0 4px;
+}
+
+.phone-input input {
+    border-radius: 0 4px 4px 0;
+}
+
+form a {
+    display: block;
+    margin-top: 5px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-actions button[type="button"] {
+    background-color: #ff4500;
+    color: white;
+}
+
+.form-actions button[type="reset"] {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.form-actions button[type="button"]:hover {
+    background-color: #e03e00;
+}
+
+.form-actions button[type="reset"]:hover {
+    background-color: #ddd;
+}
